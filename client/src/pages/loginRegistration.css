@@ -1,0 +1,106 @@
+.section-container {
+    display: flex;
+}
+
+.section-left {
+    width: 55%;
+    background: #17A2B8;
+}
+
+.section-right {
+    width: 45%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-title {
+    font-family: 'Open Sans';
+    font-size: 33.08px;
+    font-weight: 600;
+    line-height: 45.04px;
+    margin-bottom: 50px;
+}
+
+.section-input-tag {
+    border-radius: 11px;
+    border: 1.38px solid #D0D0D0;
+    width: 425px;
+    margin-top: 20px;
+}
+
+.section-input-tag img {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.section-input-tag input {
+    border: 0;
+    outline: none;
+    font-family: 'Open Sans';
+    font-size: 19.29px;
+    font-weight: 400;
+    line-height: 26.28px;
+    padding: 15px 5px;
+    color: #828282;
+    width: 310px;
+}
+
+.section-input-tag input:focus-visible {
+    border: 0;
+    outline: none;
+}
+
+.password-input .password-visible-icon {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+.no-acct-text {
+    font-family: 'Open Sans';
+    font-size: 19.29px;
+    font-weight: 400;
+    line-height: 26.28px;
+    color: #828282;
+    text-align: center;
+}
+
+.btn-one,.btn-two {
+    border-radius: 55px;
+    outline: 0;
+    cursor: pointer;
+    font-family: 'Open Sans';
+    font-size: 19.29px;
+    font-weight: 400;
+    line-height: 26.28px;
+    border-color: #17A2B8;
+    border: 1.38px solid;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 435px;
+}
+
+.btn-one {
+    background: #17A2B8;
+    color: #FFFFFF;
+    padding: 15px 0;
+}
+
+.btn-two {
+    background: #FFFFFF;
+    color: #17A2B8;
+    padding: 15px 0;
+}
+
+.error-message {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    color: #DB371F;
+}
