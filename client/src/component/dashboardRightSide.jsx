@@ -26,7 +26,7 @@ const DashboardRightSide = () => {
         </select>
       </div>
       <div className="to-do-board-list">
-        <div>
+        <div className="to-do-main">
           <ToDoBoard />
           <ToDoBoard />
           <ToDoBoard />

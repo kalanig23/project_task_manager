@@ -23,6 +23,7 @@ const Login = () => {
             console.log(loginData);
             alert('login successfully', loginData);
             setLoginData({email:'', password: ''});
+            navigate("/dashboard");
         } else {
             if(loginData.email===''){
                 newErrors.emailError = 'Please enter your email';
