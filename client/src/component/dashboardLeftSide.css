@@ -1,0 +1,38 @@
+.brand-name, .brand-section, .loggedout-name {
+    display: flex;
+    cursor: pointer;
+}
+
+.brand-name {
+    margin-bottom: 50px;
+}
+
+.brand-section {
+    margin: 30px 0 40px 0;
+}
+
+.brand-title, .brand-section-name, .loggedout-title {
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.brand-title {
+    font-weight: 700;
+    color: black;
+}
+
+.brand-section-name {
+    font-weight: 500;
+    color: #707070;
+}
+
+.loggedout-title {
+    font-weight: 500;
+    color: #CF3636;
+}
+
+.logged-out-list {
+    position: absolute;
+    bottom: 30px;
+}

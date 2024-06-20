@@ -1,0 +1,50 @@
+.dashboard-right-side-container {
+    
+}
+
+.dashboard-right-side-section {
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+.dashboard-right-side-section, .addpeople, .section-title-addpeople, .addpeople-list {
+    display: flex;
+}
+
+.section-title, .addpeople-title {
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.section-title {
+    font-size: 29px;
+    line-height: 43.5px;
+    color: black;
+}
+
+.addpeople-list {
+    margin: auto;
+}
+
+.addpeople-logo-img {
+    height: 16px;
+    width: 16px;
+}
+
+.addpeople-title {
+    font-size: 14px;
+    line-height: 21px;
+    color: #707070;
+}
+
+.duration-select, :focus-visible {
+    border: 0;
+    outline: none;
+}
+
+.to-do-board-list {
+    display: flex;
+    padding: 25px 0 25px 40px;
+    height: 100%;
+    overflow-x: scroll;
+}

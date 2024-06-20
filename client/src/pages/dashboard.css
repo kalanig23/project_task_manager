@@ -1,0 +1,13 @@
+.dashboard-container {
+    display: flex;
+    height: 100%;
+}
+
+.dashboard-left-container {
+    width: 13%;
+    border-right: 1px solid #EDF5FE
+}
+
+.dashboard-right-container {
+    width: 87%;
+}

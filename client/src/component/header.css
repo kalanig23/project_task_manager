@@ -1,0 +1,23 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 30px; */
+    padding: 20px 40px;
+}
+
+.user-name, .date {
+    font-family: 'Poppins';
+}
+
+.user-name {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+}
+
+.date {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #707070;
+}
