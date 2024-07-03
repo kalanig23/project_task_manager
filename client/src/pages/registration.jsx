@@ -4,6 +4,7 @@ import ArtSection from "../component/artsection";
 import EmailIcon from "../assets/emailicon.png";
 import PasswordIcon from "../assets/passwordicon.png";
 import PasswordLockIcon from "../assets/passwordviewicon.png";
+import PasswordUnHideIcon from "../assets/clarity_eye-hide-line.png";
 import NameIcon from "../assets/usernameicon.png";
 import './loginRegistration.css';
 
@@ -80,13 +81,13 @@ const Registration = () => {
                     <div className="password-input section-input-tag">
                         <img src={PasswordIcon} alt="password-icon"/>
                         <input placeholder="Confirm Password" name="confirmpassword" type={hideShowConfirmPassword ? 'text' : 'password'} value={registerData.confirmpassword} onChange={handleOnChangeRegister}/>
-                        <img src={hideShowConfirmPassword ? EmailIcon : PasswordLockIcon} alt="password-view-icon" className="password-visible-icon" onClick={handleHideShowConfirmPassword}/>
+                        <img src={hideShowConfirmPassword ? PasswordUnHideIcon : PasswordLockIcon} alt="password-view-icon" className="password-visible-icon" onClick={handleHideShowConfirmPassword}/>
                     </div>
                     <span className="error-message">{error.confirmpasswordError}</span>
                     <div className="password-input section-input-tag">
                         <img src={PasswordIcon} alt="password-icon"/>
                         <input placeholder="Password" name="password" type={hideShowPassword ? 'text' : 'password'} value={registerData.password} onChange={handleOnChangeRegister}/>
-                        <img src={hideShowPassword ? EmailIcon : PasswordLockIcon} alt="password-view-icon" className="password-visible-icon" onClick={handleHideShowPassword}/>
+                        <img src={hideShowPassword ? PasswordUnHideIcon : PasswordLockIcon} alt="password-view-icon" className="password-visible-icon" onClick={handleHideShowPassword}/>
                     </div>
                     <span className="error-message">{error.passwordError}</span>
                     <div>

@@ -1,0 +1,167 @@
+.to-do-card-grid {
+    border: 1px solid white;
+    background-color: white;
+    width: 300px;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.priority {
+    display: flex;
+}
+
+.to-do-card-priority-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notation-priority {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+}
+
+.priority-name {
+    margin-left: 10px;
+}
+
+.todo-assign-user {
+    width: 15px;
+    height: 15px;
+    font-family: 'DM Sans';
+    font-size: 7px;
+    font-weight: 400;
+    background-color: #f6a6c3;
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.three-dot {
+    width: 16px;
+    height: 2px;
+}
+
+.todo-card-title p{
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    word-break: break-word;
+    margin-top: 25px;
+    position: relative;
+}
+
+.todo-card-title::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    white-space: wrap;
+    width: 300px;
+    text-align: center;
+    top: 40%;
+    z-index: 10;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.todo-card-title:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.checklist-collapse-list {
+    margin-top: 25px;
+}
+
+.checklist-with-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.checklist-btn {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.check-item-list {
+    display: flex;
+    border: 1px solid #E2E2E2;
+    width: 264px;
+    height: fit-content;
+    border-radius: 12px;
+    padding: 0 15px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checklist-input {
+    margin: 0;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+}
+
+.list-name {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+}
+
+.task-date {
+    font-family: 'Poppins';
+    font-size: 8px;
+    font-weight: 500;
+    width: fit-content;
+    border-radius: 8px;
+    background: #CF3636;
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+.date-task-status {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.task-status-block {
+    display: flex;
+}
+
+.status {
+    font-family: 'Poppins';
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #767575;
+    width: fit-content;
+    border-radius: 8px;
+    background: #EEECEC;
+    padding: 8px;
+    margin-left: 12px;
+    cursor: pointer;
+}

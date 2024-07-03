@@ -4,6 +4,7 @@ import ArtSection from "../component/artsection";
 import EmailIcon from "../assets/emailicon.png";
 import PasswordIcon from "../assets/passwordicon.png";
 import PasswordLockIcon from "../assets/passwordviewicon.png";
+import PasswordUnHideIcon from "../assets/clarity_eye-hide-line.png";
 import './loginRegistration.css';
 
 const Login = () => {
@@ -20,7 +21,6 @@ const Login = () => {
         e.preventDefault();
         let newErrors = {};
         if(loginData.email!=='' && loginData.password!=='') {
-            console.log(loginData);
             alert('login successfully', loginData);
             setLoginData({email:'', password: ''});
             navigate("/dashboard");
@@ -59,7 +59,7 @@ const Login = () => {
                     <div className="password-input section-input-tag">
                         <img src={PasswordIcon} alt="password-icon"/>
                         <input placeholder="Password" name='password' type={hideShowPassword ? 'text' : 'password'} value={loginData.password} onChange={handleOnChangeLogin}/>
-                        <img src={hideShowPassword ? EmailIcon : PasswordLockIcon} alt="password-view-icon" className="password-visible-icon" onClick={handleHideShowPassword}/>
+                        <img src={hideShowPassword ? PasswordUnHideIcon : PasswordLockIcon} alt="password-view-icon" className="password-visible-icon" onClick={handleHideShowPassword}/>
                     </div>
                     <span className="error-message">{error.passwordError}</span>
                     <div>

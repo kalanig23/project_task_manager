@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import DashboardLeftSide from '../component/dashboardLeftSide';
 import DashboardRightSide from '../component/dashboardRightSide';
 import './dashboard.css';
 
-const Dashboard=()=>{
+const Dashboard=()=> {
+    const [selectedElement, setSelectedElement] = useState('Board');
     return(
         <div className="dashboard-container">
             <div className="dashboard-left-container">
-                <DashboardLeftSide/>
+                <DashboardLeftSide handleSwitchLeftRigthComponent={setSelectedElement}/>
             </div>
             <div className="dashboard-right-container">
-                <DashboardRightSide/>
+                <DashboardRightSide selectedElement={selectedElement}/>
             </div>
         </div>
     )

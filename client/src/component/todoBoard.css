@@ -1,7 +1,36 @@
 .to-do-container {
     background-color: #EEF2F5;
-    height: 76vh;
-    width: 360px;
+    min-height: 100vh;
+    min-width: 335px;
     border-radius: 10px;
     margin-right: 20px;
+    padding: 20px;
+}
+
+.to-do-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.to-do-step {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;    
+}
+
+.plus-collapese img {
+    margin-left: 15px;
+}
+
+.plus-collapese img:nth-child(1) {
+    padding: 3px;
+}
+
+.collapse-card-icon {
+    cursor: pointer;
+}
+
+.plus-card-icon {
+    cursor: pointer;
 }

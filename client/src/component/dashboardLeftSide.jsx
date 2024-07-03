@@ -7,7 +7,7 @@ import SettingIcon from "../assets/settingslogo.png";
 import LoggedOutIcon from "../assets/Logout.png";
 import "./dashboardLeftSide.css";
 
-const DashboardLeftSide = () => {
+const DashboardLeftSide = ({ handleSwitchLeftRigthComponent }) => {
   const navigate = useNavigate();
 
   const handleLoggedOut = () => {
@@ -23,21 +23,26 @@ const DashboardLeftSide = () => {
         </li>
       </ul>
       <ul className="brand-section-list">
-        <li className="brand-section">
+        <li
+          className="brand-section"
+          onClick={() => handleSwitchLeftRigthComponent("Board")}
+        >
           <img src={BoardIcon} alt="board-icon" />
           &nbsp; &nbsp; <span className="brand-section-name">Board</span>
         </li>
-        <li className="brand-section">
+        <li
+          className="brand-section"
+          onClick={() => handleSwitchLeftRigthComponent("Analytics")}
+        >
           <img src={AnalyticsIcon} alt="analytics-icon" />
-          &nbsp; &nbsp; <span className="brand-section-name">
-            Analytics
-          </span>
+          &nbsp; &nbsp; <span className="brand-section-name">Analytics</span>
         </li>
-        <li className="brand-section">
+        <li
+          className="brand-section"
+          onClick={() => handleSwitchLeftRigthComponent("Settings")}
+        >
           <img src={SettingIcon} alt="setting-icon" />
-          &nbsp; &nbsp; <span className="brand-section-name">
-            Settings
-          </span>
+          &nbsp; &nbsp; <span className="brand-section-name">Settings</span>
         </li>
       </ul>
       <ul className="logged-out-list">
